@@ -1,0 +1,37 @@
+
+.margin-brand { margin-right: 1%; }
+
+.margin-logo { margin-top: 12%; }
+
+.background-body { background: rgba(249, 244, 234, 0.4); }
+
+.background-brand { background: #f9f4ea; }
+
+main, footer {
+    padding-top: 20px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+    }
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.inverse-icon {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
