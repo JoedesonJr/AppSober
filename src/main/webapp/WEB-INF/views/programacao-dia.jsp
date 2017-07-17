@@ -31,8 +31,8 @@
                         <img class="responsive-img margin-logo" src="<c:url value='/resources/img/logo-sober.png'/>" width="75">
                     </a>
 
-                    <ul id="nav-mobile" class="left">
-                        <li>
+                    <ul id="nav-mobile">
+                        <li class="left">
                             <a class="brown-text text-darken-1" href="../programacao">
                             <i class="material-icons left">keyboard_arrow_left</i>
                             <strong>Voltar</strong></a>
@@ -73,22 +73,11 @@
                 </h5>
                 <br>
 
-                <ul class="collapsible" data-collapsible="expandable">
-                    <li>
-                        <div class="collapsible-header active brown-text text-darken-1">
-                            <i class="material-icons">filter_drama</i>Manhã
-                        </div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header active brown-text text-darken-1"><i class="material-icons">wb_sunny</i>Tarde</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header active brown-text text-darken-1"><i class="material-icons inverse-icon">brightness_3</i>Noite</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                </ul>
+                <div ng-if="dia == '30 de Julho'"><c:import url="dias/dia-30.jsp"/></div>
+                <div ng-if="dia == '31 de Julho'"><c:import url="dias/dia-31.jsp"/></div>
+                <div ng-if="dia == '1º de Agosto'"><c:import url="dias/dia-01.jsp"/></div>
+                <div ng-if="dia == '2 de Agosto'"><c:import url="dias/dia-02.jsp"/></div>
+                <div ng-if="dia == '3 de Agosto'"><c:import url="dias/dia-03.jsp"/></div>
 
             </div>
         </main>   <!-- ./conteudo -->
